@@ -12,11 +12,14 @@
     <body>
         <div class="container">
             <main class="content">
-                <section id="home" aria-labelledby="hero">
+                <section class="home" aria-labelledby="hero">
                     <div class="hero-section" id="hero">
 
-                        <div class="profile-image">
-                            <img src="./src/assets/me.webp" alt="Profile" loading="eager" draggable="false"/>
+                        <div class="profile-image-wrapper">
+                            <div class="gradient-ring"></div>
+                            <div class="profile-image">
+                                <img src="./src/assets/me.webp" alt="Profile" loading="eager" draggable="false"/>
+                            </div>
                         </div>
 
                         <h1 class="heading-name">Atul Kumar</h1>
@@ -59,9 +62,23 @@
                         </div>
                     </div>
                 </section>
-                <section id="about">Kumar</section>
-                <section id="experience">Singh</section>
-                <section id="projects">projects</section>
+                <section class="about" aria-labelledby="about">
+                    <div class="top-blue-border"></div>
+
+                    <h2 class="about-header">
+                        <span class="hash-icon">#</span>
+                        About me
+                    </h2>
+                </section>
+                <section class="experience" aria-labelledby="experience">
+                    <div class="top-blue-border"></div>
+
+                    <h2 class="experience-header">
+                        <span class="hash-icon">#</span>
+                        Experience
+                    </h2>
+                </section>
+                <section class="projects">projects</section>
             </main>
             <footer></footer>
         </div>

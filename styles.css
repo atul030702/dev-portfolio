@@ -11,9 +11,10 @@
     --grid-line-color: rgba(128, 128, 128, 0.05);
     --text-color: rgb(229, 231, 235);
     --color-blue: rgb(56, 189, 248);
+    --color-purple: #9333EA;
     --bg-icon: rgb(31, 41, 55);
     --bg-icon-hover: rgb(55, 65, 81);
-    --display-flex: flex;
+    --border-top: rgb(31, 41, 55);
 }
 
 html {
@@ -41,13 +42,45 @@ body {
 
 /* Hero Section Starts */
 
+@keyframes spin-slow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .hero-section {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10rem 0 6rem 0;
+    padding: 10rem 0 4rem 0;
+}
+
+.profile-image-wrapper {
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 1.75rem;
+}
+
+.gradient-ring {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: linear-gradient(to right, #3b82f6, var(--color-purple));
+    opacity: 0.75;
+    filter: blur(12px);
+    animation: spin-slow 6s linear infinite;
+    transition: opacity 0.7s;
+    z-index: 1;
+}
+
+.profile-image-wrapper:hover .gradient-ring {
+    opacity: 1;
 }
 
 .profile-image {
@@ -55,8 +88,14 @@ body {
     width: 8rem;
     z-index: 10;
     position: relative;
+    overflow: hidden;
     border-radius: 50%;
-    margin-bottom: 1.5rem;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+    transition: transform 0.3s ease-out;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
 }
 
 .profile-image img {
@@ -92,7 +131,7 @@ body {
     height: 0.5rem;
     position: absolute;
     left: 0;
-    bottom: -0.4rem;
+    bottom: -0.45rem;
     opacity: 20%;
     background-color: var(--color-blue);
 }
@@ -128,4 +167,46 @@ body {
 .social-icons .icon:hover {
     transform: scale(1.1);
     background-color: var(--bg-icon-hover);
+}
+
+/** About Section */
+
+.about {
+    width: 100%;
+    padding: 4rem 0;
+    border-top: 2px solid var(--border-top);
+    position: relative;
+}
+
+.top-blue-border {
+    width: 6rem;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    right: 45%;
+    transform: -translateX(50%);
+    background: linear-gradient(to right, transparent, var(--color-blue), transparent);
+}
+
+.about-header, 
+.experience-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.hash-icon {
+    color: var(--color-blue);
+    margin-right: 0.5rem;
+}
+
+/* Experience Section */
+
+.experience {
+    width: 100%;
+    padding: 4rem 0;
+    border-top: 2px solid var(--border-top);
+    position: relative;
 }
