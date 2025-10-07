@@ -1,0 +1,23 @@
+{
+  "name": "atul-portfolio",
+  "version": "1.0.0",
+  "description": "New portfolio design",
+  "keywords": [
+    "portfolio"
+  ],
+  "homepage": "https://github.com/atul030702/dev-portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/atul030702/dev-portfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atul030702/dev-portfolio.git"
+  },
+  "license": "MIT",
+  "author": "Atul Kumar",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
