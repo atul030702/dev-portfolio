@@ -10,7 +10,7 @@
     --bg-body: rgb(17, 24, 39);
     --grid-line-color: rgba(128, 128, 128, 0.05);
     --text-color: rgb(229, 231, 235);
-    --color-blue: rgb(56, 189, 248);
+    --color-blue: rgb(96, 165, 250);
     --color-purple: #9333EA;
     --bg-icon: rgb(31, 41, 55);
     --bg-icon-hover: rgb(55, 65, 81);
@@ -257,3 +257,7 @@ body {
     position: relative;
 }
 
+.experience-content-div {
+    position: relative;
+    margin-top: 2rem;
+}

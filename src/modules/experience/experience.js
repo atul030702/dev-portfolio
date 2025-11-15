@@ -4,20 +4,11 @@ import { experienceData } from "../utils/experienceObj";
 import { briefcaseIcon, calendarIcon } from "../utils/icon";
 
 function experienceSection() {
-    //console.log("experienceSection function called");
     const experienceContentDiv = document.getElementById("experience-content");
 
-    //console.log("experienceContentDiv:", experienceContentDiv);
-    //console.log("experienceData:", experienceData);
+    if(!experienceContentDiv) return;
 
-    if(!experienceContentDiv) {
-        return;
-    }
-
-    console.log("Found experience-content div");
-
-    const experienceItemHTML = experienceData.map((exp, index) => {
-        console.log(`Processing item ${index}:`, exp);
+    const experienceItemHTML = experienceData.map((exp) => {
         return `
             <div class="experience-item">
                 <div class="icon-container">
