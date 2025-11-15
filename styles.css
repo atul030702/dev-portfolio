@@ -249,7 +249,6 @@ body {
 }
 
 /* Experience Section */
-
 .experience {
     width: 100%;
     padding: 4rem 0;
@@ -260,4 +259,30 @@ body {
 .experience-content-div {
     position: relative;
     margin-top: 2rem;
+}
+
+@media (min-width: 480px) {
+    .experience-content-div {
+        padding: 0 0.75rem;
+    }
+}
+
+@media (min-width: 640px) {
+    .experience-content-div {
+        padding: 0 0.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .experience-content-div {
+        padding: 0 1rem;
+    }
+}
+
+/* Project Section */
+.project {
+    width: 100%;
+    padding: 4rem 0;
+    border-top: 2px solid var(--border-top);
+    position: relative;
 }

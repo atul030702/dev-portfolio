@@ -1,7 +1,7 @@
 export const experienceData = [
     {
         id: 1,
-        role: 'Contributer',
+        role: 'Contributor',
         company: 'Monkeys (Open Source)',
         period: '',
         location: '',
@@ -9,7 +9,7 @@ export const experienceData = [
     {
         id: 2,
         role: 'Software Development Intern',
-        company: 'Tech Innovations Inc.',
+        company: 'Buddhicintaka Pvt. Ltd.',
         period: 'Sep 2025 - Present',
         location: 'Remote',
     },

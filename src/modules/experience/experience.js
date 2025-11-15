@@ -10,6 +10,7 @@ function experienceSection() {
 
     const experienceItemHTML = experienceData.map((exp) => {
         return `
+            <div class="vertical-bar"></div>
             <div class="experience-item">
                 <div class="icon-container">
                     ${briefcaseIcon}
