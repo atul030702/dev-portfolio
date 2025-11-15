@@ -189,7 +189,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .social-icons .icon:hover {
@@ -256,3 +256,4 @@ body {
     border-top: 2px solid var(--border-top);
     position: relative;
 }
+
