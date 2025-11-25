@@ -1,0 +1,62 @@
+:root {
+    --color-primary: #3b82f6;
+    --text-color: rgb(229, 231, 235);
+}
+
+.footer-div {
+    max-width: 56rem;
+    margin: 0 auto;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyright-div {
+    margin-bottom: 0;
+}
+
+.copyright-text {
+    font-size: 0.875rem;
+    color: var(--text-color);
+}
+
+/*.svg-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    display: block;
+}*/
+
+.footer-icons {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*.footer-icons a {
+    color: var(--text-color);
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-icons a:hover {
+    color: var(--color-primary);
+}
+
+.footer-icons a .svg-icon {
+    stroke: currentColor;
+    stroke-width: 2px;
+    fill: currentColor;
+}*/
+
+@media (max-width: 768px) {
+    .footer-div {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .copyright-div {
+        margin-bottom: 1.5rem;
+    }
+}
+

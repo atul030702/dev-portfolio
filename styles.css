@@ -279,10 +279,26 @@ body {
     }
 }
 
-/* Project Section */
+/* Project Section
 .project {
     width: 100%;
     padding: 4rem 0;
     border-top: 2px solid var(--border-top);
     position: relative;
+}*/
+
+/* Github Graph Section */
+.github-graph {
+    width: 100%;
+    padding: 4rem 0;
+    border-top: 2px solid var(--border-top);
+    position: relative;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    padding: 1.5rem 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }

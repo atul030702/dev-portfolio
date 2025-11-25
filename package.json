@@ -23,5 +23,8 @@
   },
   "devDependencies": {
     "parcel": "^2.16.0"
+  },
+  "dependencies": {
+    "github-calendar": "^2.3.4"
   }
 }

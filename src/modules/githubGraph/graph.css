@@ -1,0 +1,12 @@
+.ContributionCalendar-grid {
+    overflow-x: auto !important;
+}
+
+a, .contrib-column {
+    display: none !important;
+}
+
+.ContributionCalendar-day[data-level="0"] {
+    background: #1f2733 !important;
+    opacity: 1 !important;
+}
